@@ -1,0 +1,30 @@
+{ "name": "dkimg-bobbox26-pmb",
+  "version": "0.0.0",
+  "description": "A kitchen sink docker image.",
+  "keywords": [],
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/dkimg-bobbox26-pmb/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/dkimg-bobbox26-pmb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/dkimg-bobbox26-pmb/issues"
+  },
+  "contributors": [],
+
+  "private": true, "license": "ISC",
+  "main": "package.json",
+  "scripts": { "test": "elp && nodejs test/all.mjs" },
+  "directories": { "test": "test" },
+  "eslintConfig": { "extends": "nodejs-pmb" },
+
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+
+
+  "engines": { "npm": ">=7.0.0", "node": ">=24.0.0" }
+}
