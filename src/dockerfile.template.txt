@@ -1,11 +1,11 @@
 # -*- coding: utf-8, tab-width: 2 -*-
 
-FROM node:‹nodejs_major_ver›
+FROM node:‹nodejs_major_ver› AS builder
 
 RUN mkdir /app
 WORKDIR /app
 
-COPY . ‹bobbox_dir›/
-RUN exec ‹bobbox_dir›/src/unfold.sh
+COPY . ‹oven_dir›/
+RUN exec ‹oven_dir›/src/unfold.sh
 
-ENTRYPOINT ["‹bobbox_dir›/src/entrypoint.sh"]
+ENTRYPOINT ["‹oven_dir›/src/entrypoint.sh"]

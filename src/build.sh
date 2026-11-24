@@ -20,8 +20,8 @@ function build_cli_init () {
     echo E: 'Cannot detect minimum node.js version!' >&2)
   VAL="${VAL//‹nodejs_major_ver›/$NODEJS_MAJOR_VER}"
 
-  local BOBBOX_INSIDE_PATH="/usr/lib/$PROJ_NAME"
-  VAL="${VAL//‹bobbox_dir›/$BOBBOX_INSIDE_PATH}"
+  local OVEN_INSIDE_PATH="/usr/lib/$PROJ_NAME"
+  VAL="${VAL//‹oven_dir›/$OVEN_INSIDE_PATH}"
 
   echo "$VAL" >tmp.dockerfile.txt
   docker buildx build --file tmp.dockerfile.txt --tag "$PROJ_NAME:latest" .

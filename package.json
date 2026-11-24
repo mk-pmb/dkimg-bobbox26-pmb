@@ -21,6 +21,7 @@
   "eslintConfig": { "extends": "nodejs-pmb" },
 
   "dependencies": {
+    "ansible-bogus-linux-pwhash": "^1.0.3"
   },
   "devDependencies": {
     "eslint-config-nodejs-pmb": "^0.3.14",
