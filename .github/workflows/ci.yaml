@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  job_npm_test:
+  job_build:
     runs-on: ubuntu-latest
 
     strategy:
@@ -30,6 +30,11 @@ jobs:
       - run: ghciu npm install .
       - run: ghciu npm test
       - run: ghciu -Q ghciu://util/nodejs/ci_audit.sh
+
+      - run: ghciu ./src/build.sh
+
+
+
 
 
 ...
